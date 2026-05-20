@@ -69,7 +69,7 @@ def train_model(df):
     X, y   = d[FEATURES], d["price"]
     split  = len(X) - 168
     model  = lgb.LGBMRegressor(n_estimators=500,learning_rate=0.05,
-                                num_leaves=31,random_state=42,verbose=-1)
+                num_leaves=31,random_state=42)
     model.fit(X.iloc[:split], y.iloc[:split])
     return model, d
 

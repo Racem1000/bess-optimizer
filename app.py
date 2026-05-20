@@ -44,10 +44,10 @@ def fetch_history(days=90):
         cur += timedelta(days=1)
         time.sleep(0.05)
     df = pd.DataFrame(all_data)[["time_start","SEK_per_kWh"]]
-df["hour"] = pd.to_datetime(df["time_start"], utc=True)
-df = df.drop(columns=["time_start"])
-df = df.rename(columns={"SEK_per_kWh": "price"})
-df = df.set_index("hour").resample("h").mean().reset_index()
+    df["hour"] = pd.to_datetime(df["time_start"], utc=True)
+    df = df.drop(columns=["time_start"])
+    df = df.rename(columns={"SEK_per_kWh": "price"})
+    df = df.set_index("hour").resample("h").mean().reset_index()
     return df
 
 def add_features(df):

@@ -1,0 +1,11 @@
+streamlit
+requests
+pandas
+numpy
+plotly
+lightgbm
+pyomo
+highspy
+openmeteo-requests
+requests-cache
+retry-requests

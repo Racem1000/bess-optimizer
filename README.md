@@ -2,7 +2,7 @@
 
 Three-market battery energy storage system co-optimizer trained on one year of real Swedish grid data.
 
-**+1,251.7% profit over naive dispatch. All 12 months profitable. Independently validated by Flower Technologies' market intelligence.**
+**+1,251.7% profit over naive dispatch. All 12 months profitable.**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-red)](https://bess-optimizer.streamlit.app)
 [![Python](https://img.shields.io/badge/Python-3.13-blue)](https://python.org)
